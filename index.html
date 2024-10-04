@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Tracker</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ISS</h1>
+    <div class="main-container">
+    <div id="map"></div>
+    <div class="info">
+        <p><strong>Location:</strong> <span id="iss_location">Loading...</span></p>
+        <p><strong>Speed:</strong> <span id="speed">Loading...</span></p>
+        <p><strong>Altitude:</strong> <span id="altitude">Loading...</span></p>
+        <p><strong>Latitude:</strong> <span id="latitude">Loading...</span></p>
+        <p><strong>Longitude:</strong> <span id="longitude">Loading...</span></p>
+        <p><strong>UTC Time:</strong> <span id="utcTime">Loading...</span></p>
+        <p><strong>Local Time:</strong> <span id="localTime">Loading...</span></p>
+        <label>
+            <input type="checkbox" id="iss_center" checked> Center ISS
+        </label>
+        
+    </div>
+</div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
